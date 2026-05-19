@@ -1,4 +1,5 @@
-# Dutch Electricity Consumption Analysis
+## Dashboard
+[Looker Studio Dashboard](https://datastudio.google.com/u/0/reporting/68fd19df-524d-42e2-83c0-bcd6f851a5d1/page/9NjyF)# Dutch Electricity Consumption Analysis
 
 This project explores electricity consumption patterns across Dutch cities to understand grid utilization, smart meter penetration, and demand distribution — relevant to energy transition planning.
 
