@@ -1,14 +1,16 @@
-## Dashboard
-[Looker Studio Dashboard](https://datastudio.google.com/u/0/reporting/68fd19df-524d-42e2-83c0-bcd6f851a5d1/page/9NjyF)# Dutch Electricity Consumption Analysis
+# Dutch Electricity Consumption Analysis
 
 This project explores electricity consumption patterns across Dutch cities to understand grid utilization, smart meter penetration, and demand distribution — relevant to energy transition planning.
 
-SQL analysis of electricity consumption data from the Dutch grid operator Enexis (2019).
+## Dashboard
+[Looker Studio Dashboard](https://datastudio.google.com/u/0/reporting/68fd19df-524d-42e2-83c0-bcd6f851a5d1/page/9NjyF)
+
+![Dashboard](dashboard.png)
 
 ## Dataset
-Source: [Kaggle – Energy consumption of the Netherlands](https://www.kaggle.com/datasets/lucabasa/dutch-energy)  
-File: enexis_electricity_01012019.csv  
-Rows: ~100,000 postal code level records  
+Source: [Kaggle – Energy consumption of the Netherlands](https://www.kaggle.com/datasets/lucabasa/dutch-energy)
+File: enexis_electricity_01012019.csv
+Rows: ~100,000 postal code level records
 License: CC BY-SA 4.0
 
 ## Questions Answered
@@ -19,31 +21,29 @@ License: CC BY-SA 4.0
 
 ## Key Findings
 
-**Largest cities by number of connections:**
+Largest cities by number of connections:
 EINDHOVEN    112,253
 GRONINGEN     99,112
 TILBURG       89,739
 
-**Highest average annual consumption (kWh):**
+Highest average annual consumption (kWh):
 MASTENBROEK    25,563
 WESTERHAAR     23,781
 MAASTRICHT-AIRPORT  21,428
 
-Small areas with high consumption likely reflect industrial or agricultural users — a distinct segment from residential smart meter rollouts.
+Small areas with high consumption likely reflect industrial or agricultural users.
 
-**Smart meter adoption leaders:**
+Smart meter adoption leaders:
 ZUIDVEEN    100%
 URMOND       97%
 GEFFEN       96%
 
 ## Tools
 - SQL (SQLite3)
-- DB Browser for SQLite
+- Command Line / Terminal
 
 ## How to Run
-```bash
 sqlite3 energy.db
 .mode csv
 .import data/enexis_electricity_01012019.csv electricity
 .read queries/analysis.sql
-```
